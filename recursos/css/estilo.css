@@ -1,0 +1,156 @@
+* .rubik-scribble-regular {
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
+body {
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 120px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+          "cabecalho"
+          "principal"
+          "rodape";
+}
+
+.cabecalho {
+     grid-area: cabecalho;
+     background-color: #062547;
+     color: white;
+     display: flex; 
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 10px;
+     z-index: 1;
+     box-shadow: -10px 5px 16px 7px rgba(140,135,237,0.75);
+     -webkit-box-shadow: -10px 5px 16px 7px rgba(140,135,237,0.75);
+     -moz-box-shadow: -10px 5px 16px 7px rgba(140,135,237,0.75);
+}
+.cabecalho > h1 {
+
+    margin: 0px;
+    font-weight: 300;
+    font-size: 2.8rem;
+
+}
+
+.cabecalho > h2 {
+
+    margin: 0px;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+.principal {
+    grid-area: principal;
+    height: calc(100vh - 180px); 
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.conteudo {
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+}
+.rodape {
+    grid-area: rodape;
+    background-color: #fff;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    color: #444;
+    position: sticky;
+    bottom: 0px;
+
+}
+
+.modulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.modulo {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição para a sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.modulo {
+    transition: transform 0.3s, box-shadow 0.3s, color 0.3s; /* Adiciona transição suave para transform, box-shadow e cor */
+    color: #333; /* Cor inicial do texto */
+}
+
+.modulo:hover {
+    transform: translateY(-5px) rotate(2deg); /* Efeito de elevação e rotação inclinação a direita (2deg) */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada ao passar o mouse */
+    color: #ff6347; /* Cor do texto ao passar o mouse */
+}
+.modulo > h3 {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    background-color: #4CAF50;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modulo > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.modulo > ul > li {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #333333;
+    transition: background-color 0.3s ease; /* Adiciona transição suave para a cor de fundo */
+}
+
+.modulo > ul > li:hover {
+    background-color: #f0f0f0; /* Cor de fundo mais suave ao passar o mouse */
+}
+
+.modulo > ul > li > a {
+    text-decoration: none;
+    color: inherit; /* Herda a cor do texto do elemento pai */
+}
+
+
+.modulo.verde { border: 2px solid #4caf50; }
+.modulo.verde > h3 { background-color: #4caf50; }
+
+.modulo.vermelho {border: 2px solid red; }
+.modulo.vermelho > h3 {background-color:red; }
+
+.modulo.violeta {border: 2px solid blueviolet; }
+.modulo.violeta > h3 {background-color: blueviolet; }
+
+.modulo.azul {border: 2px solid #003e85; }
+.modulo.azul > h3 {background-color: #003e85; }
+
+.modulo.roxo {border: 2px solid rebeccapurple; }
+.modulo.roxo > h3 {background-color:rebeccapurple; }
+
+.modulo.dourado {border: 2px solid rgba(255, 0, 0, 0.408) }
+.modulo.dourado > h3 {background-color:rgb(223, 216, 21); }
+
+.modulo.roxo {border: 2px solid rebeccapurple}
+.modulo.roxo >h3 {background-color: rebeccapurple}
