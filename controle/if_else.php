@@ -5,16 +5,29 @@
 if (true) {
     echo "Serei impresso?<br>";
 }
-
 if (true) {
     echo "Verdadeiro - Parte A<br>";
     echo "Verdadeiro - Parte A<br>";
 } else {
     echo "Falso - Parte A<br>";
-    echo "Falso - Parte B<br>";
+    echo "Falso - Parte b<br>";
 }
+// ABAIXO, UM EXEMPLO DE IF E ELSE UTILIZANDO FRASE PARA ACIONAR UM RESULTADO ESPECÍFICO
+    $idade = 10;
 
+    if ($idade >=18) {
+        echo "Você é maior de idade<br> "; 
+    } else {
+        echo "Você é menor de idade<br>";
+    }
 
+    $genero ="masculino";
+
+    if ($genero =="Feminino") {
+        echo "Genêro: Masculino<br>";
+    } else {
+        echo "Genêro: Feminino<br>";
+    }
 
 
 if (false) {
