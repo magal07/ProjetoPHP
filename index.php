@@ -13,7 +13,7 @@
 <body>
     <header class="cabecalho">
         <h1>PHP</h1>
-        <h2>Índice</h2>
+        <h2>FullStack</h2>
     </header>
     <main class="principal">
         <div class="conteudo">

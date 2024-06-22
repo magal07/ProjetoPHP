@@ -3,8 +3,8 @@
 
 <?php 
 
-echo "teste commit"<br>;
-echo "entrando em pâne em"<br>;
-echo "3....2....1......."<br>;
+echo "teste commit<br>";
+echo "entrando em pâne em<br>";
+echo "3....2....1.......<br>";
 
 ?>
