@@ -16,7 +16,7 @@
 <body class="exercicio">
     <header class="cabecalho">
         <h1>PHP</h1>
-        <h2>FULL STACK!</h2>
+        <h2>Conteúdo Interno</h2>
 
     </header>
     <nav class="navegacao"><a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?>class="verde">Sem formatação</a><a href="index.php" class="vermelho">Voltar</a></nav>

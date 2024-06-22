@@ -17,8 +17,7 @@ var_dump(1 === '1'); // Usar 3 simbolos de igual no var_dump faz uma consulta pa
 var_dump(111 != '111'); //FALSE
 var_dump(111 !== '111'); //TRUE
 
-echo "<p>Relacionais no If/Else</p><hr>";
-
+echo "<p class='divisao'>Relacionais no If/Else</p><hr>";
 $idade = 65;
 if ($idade < 18) {
     echo "Menor de idade = $idade anos!<br>";
@@ -29,20 +28,8 @@ if ($idade < 18) {
     echo "Terceira Idade = $idade anos!<br>";
 }
 
-echo '<p>Spacheship</p><hr>';
+echo '<p class="divisao"Spacheship</p><hr>';
 var_dump(50 <=> 50); //Retorna o valor int 1 ou int 0 ou int -1 dependendo da igualdade entre o maior e o menor
 
-echo '<p>Spacheship</p><hr>';
+echo '<p class="divisao"Spacheship</p><hr>';
 var_dump(!!'');
-
-?>
-
-<style>
-    p {
-        margin-bottom: 0px;
-    }
-
-    hr {
-        margin-top: -2px;
-    }
-</style>

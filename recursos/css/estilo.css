@@ -154,3 +154,12 @@ body {
 
 .modulo.roxo {border: 2px solid rebeccapurple}
 .modulo.roxo >h3 {background-color: rebeccapurple}
+
+p.divisao {
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+hr {
+    margin-top: 0px;
+}
+    
