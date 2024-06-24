@@ -21,6 +21,14 @@
                 <div class="modulo roxo ">
                     <h3>4. Controle</h3>
                     <ul>
+                        <li><a href="exercicio.php?dir=Controle&file=desafio_oplogico2">
+                                Desafio Op. II
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=Controle&file=desafio_oplogico">
+                                Desafio Op. Lógicos
+                            </a>
+                        </li>
                         <li><a href="exercicio.php?dir=Controle&file=operadores_logicos">
                                 Operadores Lógicos
                             </a>
