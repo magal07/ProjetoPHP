@@ -6,14 +6,14 @@
     <label for="posentadoriagenero">APOSENTADORIA - DEFINA O SEXO: </label>
         <select name="aposentadoriagenero" id="aposentadoriagenero">
             <option value="1">Homem</option>
-            <option value="0">Mulher</option>
+            <option value="0, 1">Mulher</option>
         </select>
         </div> <br>
         <div>
     <label for="idade">DEFINA SUA IDADE</label>
         <select name="idade" id="idade">
             <option value="0">Possuo 60 ANOS ou + </option>
-            <option value="1">Possuo 65 ANOS ou + </option>
+            <option value="0,1">Possuo 65 ANOS ou + </option>
         </select>
         </div>
 
@@ -47,9 +47,9 @@
     $naopode ='';
     $simpode = false;
 
-    if($aposentadoriagenero && $idade) {
+    if($aposentadoriagenero xor $idade) {
         $naopode ='Idade Insuficiente!';
-    }   elseif($aposentadoriagenero xor $idade){
+    }   elseif($aposentadoriagenero || $idade){
         $simpode ='Continue ao lado!';
     }
 
@@ -58,14 +58,22 @@
     }
 
 if($naopode) {
-     $resultado = "O(a) Sr(a). pode se aposentar! $simpode";
+     $resultado = "O(a) Sr(a). pode se aposentar!";
 } else {
     $resultado = "Você ainda não tem idade o suficiente para se aposentar!";
 }
     $tudocerto = !$naopode;
 
+    
+    if($simpode){
+        $resultado .= "<br>Continue abaixo:";
+    } else{
+        $resultado .= '<br>Existem inconsistências na sua aposentadoria!';
+    }
+
+
     if(!$naopode) {
-        $resultado .= '<br>Dê continuidade abaixo!';
+        $resultado .= '<br>Contribua mais e tente novamente!';
     } else {
         $resultado .= '<br>Aceite os termos de contrato!';
     }
