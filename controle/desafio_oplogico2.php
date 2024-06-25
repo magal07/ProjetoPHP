@@ -3,19 +3,20 @@
 
 <form action="#" method="post">
 <div>
-    <label for="aH">APOSENTADORIA - DEFINA O SEXO: </label>
-        <select name="aH" id="aH">
+    <label for="posentadoriagenero">APOSENTADORIA - DEFINA O SEXO: </label>
+        <select name="aposentadoriagenero" id="aposentadoriagenero">
             <option value="1">Homem</option>
             <option value="0">Mulher</option>
         </select>
         </div> <br>
         <div>
-    <label for="aM">DEFINA SUA IDADE</label>
-        <select name="aM" id="aM">
-            <option value="1">60 ANOS + OU EQUIVALENTE </option>
-            <option value="0">65 ANOS + OU EQUIVALENTE </option>
+    <label for="idade">DEFINA SUA IDADE</label>
+        <select name="idade" id="idade">
+            <option value="0">Possuo 60 ANOS ou + </option>
+            <option value="1">Possuo 65 ANOS ou + </option>
         </select>
         </div>
+
         <button>Executar</button>
 </form>
 
@@ -40,43 +41,40 @@
 
 <?php
 
-    if(isset ($_POST['aH']) && isset($_POST['aM'])) { 
-    $aH = $_POST['aH'] === '1';
-    $aM = !!$_POST['aM'];
+    if(isset ($_POST['aposentadoriagenero']) && isset($_POST['idade'])) { 
+    $aposentadoriagenero = $_POST['aposentadoriagenero'] === '1';
+    $aposentadoriagenero = !!$_POST['idade'];
+    $naopode ='';
+    $simpode = false;
 
-    
-    $idade = 65; 
-    $sexo = 'MASCULINO';
-    $criterioHomem = ($idade >=65 && $sexo === 'MASCULINO');
-    $criterioMulher = ($idade >=60 && $sexo === 'FEMININO');
-    
- if($aH && $aM) {
-    $naoaH ='Não Aposenta';
-   
-} elseif($aH xor $aM) {
-    $naoaM ='Não Aposenta';
-} 
-if($aH or $aM) {
-    $naoaposenta = false;
-}
+    if($aposentadoriagenero && $idade) {
+        $naopode ='Idade Insuficiente!';
+    }   elseif($aposentadoriagenero xor $idade){
+        $simpode ='Continue ao lado!';
+    }
 
-if($aH) {
-    $resultado = "O Sr. pode se aposentar!";
+    if($aposentadoriagenero or $idade) {
+    $simpode = true;
+    }
+
+if($naopode) {
+     $resultado = "O(a) Sr(a). pode se aposentar! $simpode";
 } else {
-    $resultado = "Você ainda não tem idade o suficiente para se aposentar";
+    $resultado = "Você ainda não tem idade o suficiente para se aposentar!";
 }
+    $tudocerto = !$naopode;
 
-$aposenta = !$naoaposenta;
+    if(!$naopode) {
+        $resultado .= '<br>Dê continuidade abaixo!';
+    } else {
+        $resultado .= '<br>Aceite os termos de contrato!';
+    }
 
-if(!$naoaposenta) {
-    $resultado .= '<br>Pressione: Aceito os Termos de Contrato e Dirija-se a Próxima Etapa!';
-} else {
-    $resultado .= '<br>Falta alguns anos para o(a) Senhor(a) se aposentar'; 
-}
+
 
 echo "<p>$resultado</p>";
 
-// echo var_dump($_POST['aH']);
+
 
 }
    
