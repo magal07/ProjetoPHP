@@ -5,15 +5,15 @@
 <div>
     <label for="posentadoriagenero">APOSENTADORIA - DEFINA O SEXO: </label>
         <select name="aposentadoriagenero" id="aposentadoriagenero">
-            <option value="1">Homem</option>
-            <option value="0, 1">Mulher</option>
+            <option value="0">Homem</option>
+            <option value="1">Mulher</option>
         </select>
         </div> <br>
         <div>
     <label for="idade">DEFINA SUA IDADE</label>
         <select name="idade" id="idade">
             <option value="0">Possuo 60 ANOS ou + </option>
-            <option value="0,1">Possuo 65 ANOS ou + </option>
+            <option value="1">Possuo 65 ANOS ou + </option>
         </select>
         </div>
 
@@ -42,22 +42,22 @@
 <?php
 
     if(isset ($_POST['aposentadoriagenero']) && isset($_POST['idade'])) { 
-    $aposentadoriagenero = $_POST['aposentadoriagenero'] === '1';
+    $aposentadoriageneromasculino = $_POST['aposentadoriagenero'] === '0';
     $aposentadoriagenero = !!$_POST['idade'];
-    $naopode ='';
+    $aposentadoriagenero = !!$_POST['idade'];
+    $naopode = '';
     $simpode = false;
 
-    if($aposentadoriagenero xor $idade) {
-        $naopode ='Idade Insuficiente!';
-    }   elseif($aposentadoriagenero || $idade){
-        $simpode ='Continue ao lado!';
-    }
 
     if($aposentadoriagenero or $idade) {
     $simpode = true;
+    } elseif ($aposentadoriagenero xor $idade) {
+        $naopode = false;
     }
 
-if($naopode) {
+    
+
+if($simpode) {
      $resultado = "O(a) Sr(a). pode se aposentar!";
 } else {
     $resultado = "Você ainda não tem idade o suficiente para se aposentar!";
