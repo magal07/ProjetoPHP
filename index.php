@@ -21,8 +21,8 @@
                 <div class="modulo roxo ">
                     <h3>4. Controle</h3>
                     <ul>
-                        <li><a href="exercicio.php?dir=Controle&file=v1.2">
-                                v1.2
+                        <li><a href="exercicio.php?dir=Controle&file=operador_ternario">
+                                Operador Ternário
                             </a>
                         </li>
                         <li><a href="exercicio.php?dir=Controle&file=desafio_aposentadoria_versao_final">
