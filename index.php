@@ -21,6 +21,14 @@
                 <div class="modulo roxo ">
                     <h3>4. Controle</h3>
                     <ul>
+                        <li><a href="exercicio.php?dir=Controle&file=switch_v2.1">
+                            Conversor de Quilometragem e Temperatura
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=Controle&file=switch">
+                                Switch
+                            </a>
+                        </li>
                         <li><a href="exercicio.php?dir=Controle&file=operador_ternario">
                                 Operador Ternário
                             </a>
