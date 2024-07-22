@@ -155,6 +155,12 @@ body {
 .modulo.roxo {border: 2px solid rebeccapurple}
 .modulo.roxo >h3 {background-color: rebeccapurple}
 
+.modulo.cinza {border: 2px solid #808080}
+.modulo.cinza >h3 {background-color: #808080}
+
+.modulo.laranja {border: 2px solid #ff6347}
+.modulo.laranja >h3 {background-color: #ff6347}
+
 p.divisao {
     margin-bottom: 0px;
     font-weight: bold;

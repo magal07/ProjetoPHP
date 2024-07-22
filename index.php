@@ -18,7 +18,36 @@
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
-                <div class="modulo roxo ">
+                <div class="modulo laranja">
+                    <h3>5. Array</h3>
+                    <ul>
+                        <li><a href="exercicio.php?dir=Array&file=desafio_sorteio">
+                            Desafi Sorteio
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=Array&file=operacoes_arrays">
+                            Operações Arrays
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=Array&file=desafio_meses">
+                            Desafio Meses
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=Array&file=desafio_index">
+                            Desafio Index
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=Array&file=mapa">
+                            Mapa
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=Array&file=basico">
+                            Array
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modulo roxo">
                     <h3>4. Controle</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=Controle&file=switch_v2.1">
