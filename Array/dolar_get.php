@@ -2,4 +2,3 @@
 
 <?php 
 
-echo $_GET;
