@@ -18,9 +18,30 @@
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
+                <div class="modulo cinza">
+                    <h3>6. Repetições</h3>
+                    <ul>
+                        <li><a href="exercicio.php?dir=repeticoes&file=desafio_for">
+                            Desafio For 
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=for">
+                            For 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="modulo laranja">
                     <h3>5. Array</h3>
                     <ul>
+                        <li><a href="exercicio.php?dir=Array&file=comparacao">
+                            Comparação Arrays
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=Array&file=post">
+                            $_POST
+                            </a>
+                        </li>
                         <li><a href="exercicio.php?dir=Array&file=dolar_get">
                             $_GET
                             </a>

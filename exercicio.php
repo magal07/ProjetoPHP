@@ -19,15 +19,20 @@
         <h2>Conteúdo Interno</h2>
 
     </header>
-    <nav class="navegacao"><a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?>class="verde">Sem formatação</a><a href="index.php" class="vermelho">Voltar</a></nav>
+    <nav class="navegacao">
+        <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?>
+    class="azul">Sem formatação</a>
+    <a href="index.php" class="vermelho">Voltar</a>
+    </nav>
     <main class="principal">
-        <div class="conteudo"><?php
-                                // 
-                                // include($_GET['dir'] . "/" . $_GET['file'] . ".php");
-                                // {$_GET['dir']} {$_GET['file']} . ".php"");
+        <div class="conteudo">
+            
+            <?php
+             // include($_GET['dir'] . "/" . $_GET['file'] . ".php");
+            // {$_GET['dir']} {$_GET['file']} . ".php"");
 
-                                include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");
-                                ?>
+            include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");
+             ?>
         </div>
         </nav>
         </div>
@@ -38,3 +43,4 @@
 </html>echo teste ();
 \\*
 /* $user = new user;
+
