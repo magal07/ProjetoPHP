@@ -21,6 +21,18 @@
                 <div class="modulo laranja">
                     <h3>5. Array</h3>
                     <ul>
+                        <li><a href="exercicio.php?dir=Array&file=dolar_get">
+                            $_GET
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=Array&file=constantes">
+                            Constantes
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=Array&file=multi">
+                            Multi
+                            </a>
+                        </li>
                         <li><a href="exercicio.php?dir=Array&file=desafio_sorteio">
                             Desafi Sorteio
                             </a>
