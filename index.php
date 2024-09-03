@@ -21,6 +21,30 @@
                 <div class="modulo cinza">
                     <h3>6. Repetições</h3>
                     <ul>
+                        <li><a href="exercicio.php?dir=repeticoes&file=desafio_tabela2">
+                            Desafio Tabela II
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=desafio_tabela">
+                            Desafio Tabela
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=while_dowhile">
+                            While | Do While
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=desafio_impressao">
+                            Desafio Impressão 
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=break_continue">
+                            Break | Continue 
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=foreach">
+                            Foreach 
+                            </a>
+                        </li>
                         <li><a href="exercicio.php?dir=repeticoes&file=desafio_for">
                             Desafio For 
                             </a>
@@ -232,6 +256,10 @@
                         </li>
                         <li><a href="exercicio.php?dir=basico&file=desafio">
                                 Desafio
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=basico&file=tabela">
+                                Criação de Tabelas
                             </a>
                         </li>
                     </ul>
