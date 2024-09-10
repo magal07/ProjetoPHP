@@ -18,6 +18,15 @@
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
+                <div class="modulo rosa">
+                    <h3>7. Funções</h3>
+                    <ul>
+                        <li><a href="exercicio.php?dir=funcoes&file=funcao_escopo">
+                            Função Escopo
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
                 <div class="modulo cinza">
                     <h3>6. Repetições</h3>
                     <ul>
