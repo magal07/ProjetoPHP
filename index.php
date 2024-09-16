@@ -21,6 +21,18 @@
                 <div class="modulo rosa">
                     <h3>7. Funções</h3>
                     <ul>
+                        <li><a href="exercicio.php?dir=funcoes&file=args_variaveis">
+                            Argumentos Variáveis 
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=funcoes&file=desafio_function">
+                            Palindromo 
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=funcoes&file=args_return">
+                            Argumentos & Retorno 
+                            </a>
+                        </li>
                         <li><a href="exercicio.php?dir=funcoes&file=funcao_escopo">
                             Função Escopo
                             </a>

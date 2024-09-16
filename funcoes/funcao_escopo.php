@@ -14,6 +14,7 @@ function imprimirMensagens(){ // O ALGORITIMO INTERNO PODE TER CONDICIONAIS, LA�
 }
 imprimirMensagens(); // <- teste função!
 
+echo '<br>';
 
 
 $variavel = 1;
@@ -25,6 +26,8 @@ echo "Antes: $variavel<br>";
 trocaValor(); 
 echo "Depois: $variavel <br>";
 echo "<br>";
+
+
 function trocaValorDeVerdade() {
     global $variavel; // VARIAVEL LOCAL: FICA DENTRO DO LOCAL QUE FOI DEFINIDO DENTRO DA FUNÇÃO! >  GLOBAL > INDICA AO PHP Q QUERO ACESSAR A VARIÁVEL DO ESCOPO MAIS ABRANGENTE! (ACESSAR A DE FORA DA FUNÇÃO)
     $variavel = 3;
@@ -36,3 +39,23 @@ trocaValorDeVerdade();
 echo "Depois: $variavel <br>";
 
 // var_dump(trocaValorDeVerdade()); 
+
+echo '<br>';
+
+
+// Teste de funções feitas por mim 
+ 
+$variaveldois = 10; 
+
+function trocaValor2() {
+    $variaveldois = 50; 
+    echo "Durante a Função: $variaveldois <br>";
+    
+}
+
+echo "Antes: $variaveldois <br>";
+trocaValor2();
+echo "Depois: $variaveldois <br>";
+
+
+
