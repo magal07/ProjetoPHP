@@ -18,9 +18,46 @@
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
-                <div class="modulo rosa">
+                <div class="modulo verde">
+                    <h3>8. Paradigma 0.0.</h3>
+                    <ul>
+                        <li><a href="exercicio.php?dir=orientacao_objetos&file=desafio_classe">
+                             Classe Date & Time
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=orientacao_objetos&file=classe">
+                            Primeira Classe
+                            </a>
+                        </li>
+                    </ul>
+                        </div>
+                    <div class="modulo rosa">
                     <h3>7. Funções</h3>
                     <ul>
+                        <li><a href="exercicio.php?dir=funcoes&file=map_filter">
+                            Map & Filter
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=funcoes&file=retornando_funcao">
+                            Retornando Função
+                            </a> 
+                        </li>
+                        <li><a href="exercicio.php?dir=funcoes&file=recursividade_dsf">
+                            Recursão
+                            </a> 
+                        </li>
+                        <li><a href="exercicio.php?dir=funcoes&file=recursividade">
+                            Recursividade
+                            </a> 
+                        </li>
+                        <li><a href="exercicio.php?dir=funcoes&file=closure_callable">
+                            Closure & Callable
+                            </a> 
+                        </li>
+                        <li><a href="exercicio.php?dir=funcoes&file=funcao_anonima">
+                            Função Anônima 
+                            </a>
+                        </li>    
                         <li><a href="exercicio.php?dir=funcoes&file=declarar_tipos">
                             Usando Tipos 
                             </a>
