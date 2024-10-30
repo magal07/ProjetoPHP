@@ -21,6 +21,10 @@
                 <div class="modulo verde">
                     <h3>8. Paradigma 0.0.</h3>
                     <ul>
+                        <li><a href="exercicio.php?dir=orientacao_objetos&file=heranca">
+                            Herança
+                            </a>
+                        </li>
                         <li><a href="exercicio.php?dir=orientacao_objetos&file=construtor_destrutor">
                             Construtor & Destrutor
                             </a>

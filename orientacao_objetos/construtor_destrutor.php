@@ -13,7 +13,7 @@ function __construct($novoNome, $idade = 18){ // dentro dos parenteses informe q
         $this->idade = $idade;
 } 
 
-    function __destruct() {
+    function __destruct() { // < - Destrutor 
         echo 'E morreu!';
     }
 
