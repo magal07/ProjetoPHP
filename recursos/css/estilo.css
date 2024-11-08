@@ -2,6 +2,7 @@
     font-family: "Rubik Scribble", system-ui;
     font-weight: 500;
     font-style: normal;
+    
   }
   
 
@@ -18,37 +19,74 @@ body {
 }
 
 .cabecalho {
-     grid-area: cabecalho;
-     background-color: #062547;
-     color: white;
-     display: flex; 
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     padding-bottom: 10px;
-     z-index: 1;
-     box-shadow: -10px 5px 16px 7px rgba(140,135,237,0.75);
-     -webkit-box-shadow: -10px 5px 16px 7px rgba(140,135,237,0.75);
-     -moz-box-shadow: -10px 5px 16px 7px rgba(140,135,237,0.75);
+    grid-area: cabecalho;
+    background: linear-gradient(135deg, #000000, #363636);
+    color: #fefefe;
+    display: flex;
+    justify-content: space-between; /* Coloca o logo e o conteúdo nos extremos */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 60px 20px;
+    z-index: 10;
+    box-shadow: 0px 10px 20px rgba(14, 40, 88, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
 }
+
+/* Container para alinhar o logo e o texto */
+.logo-php {
+    display: flex;
+    align-items: center; /* Centraliza o SVG verticalmente */
+    margin-right: 15px; /* Ajuste de espaço entre o logo e o conteúdo principal */
+}
+
+.cabecalho-conteudo {
+    text-align: center; /* Centraliza o texto */
+    flex-grow: 1;
+}
+
+/* Estilização do texto */
+.cabecalho h1, .cabecalho p {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
 .cabecalho > h1 {
-
-    margin: 0px;
-    font-weight: 300;
-    font-size: 2.8rem;
-
+    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: 1.2px;
 }
 
 .cabecalho > h2 {
-
-    margin: 0px;
-    font-weight: 200;
-    font-size: 1.6rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    opacity: 0.85;
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 20px 15px;
+        border-radius: 8px;
+    }
+    
+    .cabecalho > h1 {
+        font-size: 2.4rem;
+    }
+    
+    .cabecalho > h2 {
+        font-size: 1.2rem;
+    }
+}
+
+
 .principal {
     grid-area: principal;
     height: calc(100vh - 180px); 
-    background-color: #f0f0f0;
+    background-color: #000000;
     padding: 20px;
 }
 
@@ -56,19 +94,20 @@ body {
     position: relative;
     height: 100%;
     overflow-y: scroll;
-    background-color: #fff;
+    background-color:  #000000;
+    color: white;
     padding: 20px;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 25px 0px rgba(134, 134, 134, 0.2);
 }
 .rodape {
     grid-area: rodape;
-    background-color: #fff;
+    background-color: #000000;
     display: flex; 
     justify-content: flex-end;
     align-items: center;
     font-size: 1.2rem;
     padding-right: 20px;
-    color: #444;
+    color: #c9cefd;
     position: sticky;
     bottom: 0px;
 
@@ -86,8 +125,8 @@ body {
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição para a sombra */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    background-color: #000000;
 }
 
 .modulo {
@@ -98,7 +137,7 @@ body {
 .modulo:hover {
     transform: translateY(-5px) rotate(2deg); /* Efeito de elevação e rotação inclinação a direita (2deg) */
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada ao passar o mouse */
-    color: #ff6347; /* Cor do texto ao passar o mouse */
+    color: #15ff00; /* Cor do texto ao passar o mouse */
 }
 .modulo > h3 {
     margin: 0;
@@ -125,12 +164,12 @@ body {
 }
 
 .modulo > ul > li:hover {
-    background-color: #f0f0f0; /* Cor de fundo mais suave ao passar o mouse */
+    background-color: #272727; /* Cor de fundo mais suave ao passar o mouse */
 }
 
 .modulo > ul > li > a {
-    text-decoration: none;
-    color: inherit; /* Herda a cor do texto do elemento pai */
+    text-decoration:rgba(0, 0, 0, 0.2);
+    color: white; /* Herda a cor do texto do elemento pai */
 }
 
 
@@ -163,6 +202,9 @@ body {
 
 .modulo.rosa {border: 2px solid palevioletred}
 .modulo.rosa >h3 {background-color: palevioletred}
+
+.modulo.branco {border: 2px solid #fefefe}
+.modulo.branco >h3 {background-color: solid white}
 
 p.divisao {
     margin-bottom: 0px;

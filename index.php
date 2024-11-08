@@ -11,16 +11,56 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <h1>PHP</h1>
-        <h2>FullStack</h2>
+
+<style>
+    .cabecalho {
+        text-align: center; /* Centraliza o conteúdo dentro do cabeçalho */
+    }
+    .logo-php {
+        display: inline-block; /* Garante que o logo não ocupe toda a largura */
+        margin-top: 10px; /* Ajuste o valor conforme necessário */
+    }
+</style>
+
+<div class="cabecalho">
+    <a href="https://github.com/magal07/ProjetoPHP" target="_blank" class="logo-php">
+        <svg width="60" height="60" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#777BB4"/>
+            <text x="3" y="20" fill="white" font-size="12" font-family="Arial" font-weight="bold">PHP</text>
+        </svg>
+    </a>
+        </svg>
+    </span>
+    <div class="cabecalho-conteudo">
+        <h1>PHP Erudito</h1>
+        <h3>Sejam muito bem-vindos ao meu site estrutural de estudos e aplicações relacionados a PHP! <br>
+        Observação: O código fonte encontra-se no GIT e é por lá que forneço informações sobre minhas aplicações.
+        </h3>
+    </div>
+</div>
     </header>
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
-                <div class="modulo verde">
+                <div class="modulo azul">
                     <h3>8. Paradigma 0.0.</h3>
                     <ul>
+                        <li><a href="exercicio.php?dir=orientacao_objetos&file=abstract">
+                            Abstract 
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=orientacao_objetos&file=interface">
+                            Interface 
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=orientacao_objetos&file=static">
+                            Static 
+                            </a>
+                        </li>
+                        <li><a href="exercicio.php?dir=orientacao_objetos&file=visibilidade">
+                            Visibilidade
+                            </a>
+                        </li>
                         <li><a href="exercicio.php?dir=orientacao_objetos&file=heranca">
                             Herança
                             </a>
@@ -39,7 +79,7 @@
                         </li>
                     </ul>
                         </div>
-                    <div class="modulo rosa">
+                    <div class="modulo azul">
                     <h3>7. Funções</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=funcoes&file=map_filter">
@@ -92,7 +132,7 @@
                         </li>
                     </ul>
                     </div>
-                <div class="modulo cinza">
+                <div class="modulo azul">
                     <h3>6. Repetições</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=repeticoes&file=desafio_tabela2">
@@ -129,7 +169,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="modulo laranja">
+                <div class="modulo azul">
                     <h3>5. Array</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=Array&file=comparacao">
@@ -178,7 +218,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="modulo roxo">
+                <div class="modulo azul">
                     <h3>4. Controle</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=Controle&file=switch_v2.1">
@@ -260,7 +300,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="modulo vermelho">
+                <div class="modulo azul">
                     <h3>2. Tipos</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=tipos&file=int">
@@ -307,7 +347,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="modulo verde">
+                <div class="modulo azul">
                     <h3>1. Básico</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=basico&file=ola">
