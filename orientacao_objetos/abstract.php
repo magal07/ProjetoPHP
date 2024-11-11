@@ -1,7 +1,7 @@
 <div class="titulo">Métodos Abstratos</div>
 
 <?php
-
+// uma classe abstrata não pode herdar de uma interface, em vez de extends usa-se implements
 abstract class Abstrata {  // Não pode ser utilizada de forma primária, sendo assim, os métodos só serão extendidos após a utilização da Classe CONCRETA
     abstract public function metodo1(); 
     abstract protected function metodo2($parametro);
@@ -19,7 +19,7 @@ class Concreta extends FilhaAbstrata {
         echo "Executando método 1 extendido <br>";
         parent::metodo1();
     }
-    protected function metodo2($parametro){ 
+    public function metodo2($parametro){ 
         echo "Executando método 2, com parâmetro $parametro";
     }
     public function metodo3() { 

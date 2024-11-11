@@ -1,6 +1,7 @@
 <div class="titulo">Interface</div>
 
 <?php
+// uma classe abstrata não pode herdar de uma interface, em vez de extends usa-se implements
 
 interface Animal {  // quando não existe um padrão específico entre a classe. (Todos animais respiram, mas não da pra saber por onde, como e com o que ele respira)
 

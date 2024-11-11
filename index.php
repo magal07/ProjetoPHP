@@ -45,6 +45,10 @@
                 <div class="modulo azul">
                     <h3>8. Paradigma 0.0.</h3>
                     <ul>
+                        <li><a href="exercicio.php?dir=orientacao_objetos&file=desafio7erros_professor">
+                            Desafio 7 Erros 
+                            </a>
+                        </li>
                         <li><a href="exercicio.php?dir=orientacao_objetos&file=abstract">
                             Abstract 
                             </a>
